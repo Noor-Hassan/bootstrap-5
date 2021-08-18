@@ -1,0 +1,288 @@
+/* top bar section */
+/* top bar */
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+.font-18{
+  font-size: 12px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.nav-style{
+height: 40px;
+}
+/* nav-bar section */
+.home-list>ul>li:not(:last-child) {
+margin-right: 14px;
+}
+.social-icon-list>ul>li:not(:last-child) {
+margin-right: 14px;
+}
+.for-media{
+display: none;
+}
+@media (min-width:768px){
+#for-media1{
+  display: block;
+}
+#for-media2{
+  display: block;
+}
+#for-media6{
+  display: block;
+}
+}
+@media (max-width:767px){
+#for-media3{
+  display: block;
+}
+
+}
+@media (max-width:767px){
+#for-media4{
+  display: block;
+}
+#for-media5{
+  display: block;
+}
+
+}
+/* home-banner section  */
+.product-item .text-box {
+  position: absolute;
+  font-size: 22px;
+  color: white;
+  z-index: 0;
+  bottom: 0;
+  top: 50%;
+  left: 0;
+  transform: translateY(-31%);
+  right: 0;
+  text-align: center;
+}
+.product-item{
+position: relative;
+margin-top: 10px;
+}
+.product-item .btn-shop a {
+text-decoration: none;
+color: black;
+}
+.product-item .btn-shop{
+  position: absolute;
+  opacity: 1;
+  transition: all .3s ease-in;
+  left: 0;
+  text-align: center;
+  right: 0;
+  bottom: 45px;
+}
+.btn-shopp{
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 40px;
+
+}
+.product-item:hover .btn-shop {
+bottom: 30px;
+}
+/* section home details  */
+.home-detail .text-box>h4 {
+  font-size: 16px;
+}
+
+.home-detail .text-box>span {
+  font-size: 14px;
+}
+/* best collection section  */
+
+.collection-detail .imgbox .text-box {
+    left: 0;
+    position: absolute;
+    right: 0;
+    bottom: 35px;
+    top: 0;
+    color: white;
+}
+.collection-detail .imgbox .text-box>h3{
+  color: white;
+}
+.collection-detail .img-box .text-box {
+    position: absolute;
+    top: 40%;
+    transform: translateX(35%);
+}
+.collection-detail {
+    position: relative;
+}
+/* sale section  */
+.sale-img .img-box {
+  position: relative;
+}
+
+.sale-img .img-box::before {
+  content: "SALE";
+  color: white;
+  font-size: 12px;
+  background: black;
+  position: absolute;
+  padding: 0px 5px;
+  border-radius: 0px 9px 0px 0px;
+  top: 10px;
+}
+.sale-img .img-box .icon-box {
+  position: absolute;
+  bottom: 0;
+  left: 47%;
+  transform: translateX(-53%);
+  transition: all .3s ease-in;
+  /* right: 0px; */
+}
+.icon-box>ul>li:not(:last-child){
+  margin-right: 20px;
+}
+.sale-img:hover .icon-box{
+  bottom: 8%;
+}
+.icon-box>ul>li{
+  background-color:white;
+  height: 40px;
+  border-radius: 50%;
+  width: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+ul.icon-bar>li>a {
+  text-decoration: none;
+}
+/* section summer collection */
+.summer-collection{
+  background-image: url(../img/cover-4.jpg);
+  height: 550px;
+}
+.bg-cover {
+
+  background-repeat: no-repeat!important;
+  background-position: center center!important;
+  background-size: cover!important;
+}
+.collection-count .text-box {
+  position: absolute;
+  /* left: 30%; */
+  right: 30%;
+  transform: translate(18%, 40%);
+}.collection-count .text-box {
+  position: absolute;
+  right: 30%;
+  transform: translate(18%, 40%);
+}
+.collection-count .text-box .shop-offer {
+  background: black;
+  border-radius: 5px;
+  text-align: center;
+  height: 32px;
+}
+.collection-count .text-box .shop-offer>a{
+  color: white;
+  text-decoration: none;
+}
+/* section brand css */
+.brand-img {
+  position: relative;
+}
+
+.brand-img::before {
+  content: "";
+  inset: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 1;
+  position: absolute;
+  opacity: 50%;
+  display: none;
+}
+
+.brand-img:hover::before {
+  display: block;
+}
+.brand-img .img-box{
+  position: relative;
+}
+.brand-img .img-box .icon-bar{
+  position: absolute;
+  bottom: -10px;
+  transition: all .4s ease-in-out;
+  z-index: 2;
+  color: white;
+}
+.brand-img:hover .img-box .icon-bar{
+bottom: 30%;
+color: white;
+font-weight: 900;
+font-size: 20px;
+}
+/* footer */
+footer{
+  background-color:black ;
+
+  color: white;
+}
+ul.footer-social-icon>li:not(:last-child) {
+  margin-right: 10px;
+}
+ul.footer-social-icon {
+  margin-left: -31px;
+}
+.subscrib .bar>input {
+  border-style: none;
+  background: #303030;
+  padding: 10px;
+  width: 16rem;
+  height: 4rem;
+  padding-left: 28px;
+}
+.subscrib .bar>button {
+  background-color: #525252;
+  color: #fff;
+  height: 4rem;
+  width: 7rem;
+  border-style: none;
+}
